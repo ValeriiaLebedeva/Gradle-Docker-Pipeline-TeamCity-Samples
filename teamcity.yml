@@ -1,0 +1,11 @@
+pipeline:
+  name: Code First Pipeline
+
+  jobs:
+    - job:
+        name: Build
+        steps:
+          - script:
+              name: Hello TeamCity
+              script-content: |
+                echo "Hello from YAML pipeline"
